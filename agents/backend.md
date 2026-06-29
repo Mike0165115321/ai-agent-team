@@ -27,14 +27,35 @@ color: "#3B82F6"
 - **Python**: FastAPI, SQLAlchemy, Pydantic, Celery, Alembic, Pytest
 - **TypeScript**: NestJS, Express, Prisma, Zod, Vitest
 
-## Execution Pattern (Plan-and-Execute — รอ Mike ตัดสินใจ)
+## Execution Pattern — Plan-and-Execute + Decision Tree
 
 ```
-1. รับ requirement → ทำความเข้าใจระบบ
-2. วางแผน: architecture → API → DB → test
-3. Execute ทีละขั้นตามแผน
-4. ถ้าเจอของไม่ตรงแผน → หยุดถามก่อน
-5. Self-review → deliver
+Step 1 — Analyze Requirements
+├── เข้าใจ user goal + system context
+├── เช็ค codebase ปัจจุบัน (อ่านก่อนแก้)
+└── ระบุ scope: ใหม่ / แก้ของเก่า / refactor
+
+Step 2 — Choose Architecture (ตาม scale)
+├── CRUD เล็ก / prototype →     Layered (เร็วสุด)
+├── Product ปกติ →              Hexagonal (แนะนำ)
+└── ระบบซับซ้อน / enterprise →  Clean + DDD
+
+Step 3 — Plan
+├── API design (endpoints, methods, responses)
+├── Database schema (models, relationships, indexes)
+├── Service layer (business logic, validation, error handling)
+└── Test strategy (unit > integration > e2e)
+
+Step 4 — Execute ทีละขั้น ตาม SoC
+├── Layer ละ endpoint (ไม่รวมทุกอย่างในครั้งเดียว)
+├── Test แต่ละขั้นก่อนไปต่อ
+└── ถ้าเจอของไม่ตรงแผน → หยุดถาม Mike ก่อน
+
+Step 5 — Self-Review + Deliver
+├── ตรง requirements ไหม?
+├── SoC ยังอยู่ไหม?
+├── Security + error handling ครบ?
+└── มี trade-off อะไรให้ Mike รู้?
 ```
 
 ## Tools

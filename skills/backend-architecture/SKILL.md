@@ -54,6 +54,29 @@ Service(repository=SQLiteRepository())
 
 ---
 
+## Architecture Selection Guide
+
+เลือกตาม scale ของ project:
+
+| ถ้า... | ใช้ | เพราะ |
+|--------|-----|-------|
+| CRUD เล็ก, prototype, MVP, <3 ปี | **Layered** | เร็วสุด, overhead ต่ำ |
+| Product จริง, 3-10 ปี, หลาย integrations | **Hexagonal** | Balance ที่สุด, testable, เปลี่ยน infra ได้ |
+| ระบบซับซ้อน, domain-heavy, 10+ ปี, enterprise | **Clean + DDD** | คุ้มค่ากับ investment |
+
+### Decision Flow
+```
+Project scale?
+├── เล็ก (CRUD, <1K endpoints, solo)
+│   └── → Layered
+├── กลาง (product จริง, 3-10 ปี)
+│   └── → Hexagonal (Ports & Adapters)
+└── ใหญ่ (ระบบซับซ้อน, 10+ ปี, หลายทีม)
+    └── → Clean + DDD
+```
+
+---
+
 ## Plugin / Module System (ยืมจาก Semantic Kernel)
 
 Backend capabilities เป็น plugins/modules:

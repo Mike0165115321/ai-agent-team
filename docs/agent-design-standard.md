@@ -232,19 +232,30 @@ Rubric สำหรับประเมิน output agent:
 
 ---
 
-## ⏳ รอ Decision: Execution Patterns
+## ✅ Decision: Execution Patterns
 
-> **ยังไม่ตัดสินใจ** — รอ Mike เลือกว่าอยากใช้ pattern แบบไหน
+> ตัดสินใจแล้ว — 29 มิ.ย. 69
 
-Pattern ที่นิยมในวงการ:
+| Agent | Pattern | Decision |
+|-------|---------|----------|
+| **designer** 🎨 | Reflection + ReAct | ✅ Designer standard (thinking + self-review) |
+| **backend** ⚙️ | Plan-and-Execute + Decision Tree | ✅ เริ่มจาก Analyze → Choose Architecture → Plan → Execute → Review |
+| **debugger** 🐛 | — | ⏳ รอตัดสินใจ |
+| **scribe** 📝 | — | ⏳ รอตัดสินใจ |
+| **steward** 🏆 | — | ⏳ รอตัดสินใจ |
+| **minecrafter** ⛏️ | — | ⏳ รอตัดสินใจ |
 
-| Pattern | ใช้เมื่อ | agent ที่เหมาะ |
-|---------|---------|---------------|
-| **ReAct** (Reason + Act) | แก้ปัญหา, debug, ต้องลองผิดลองถูก | debugger |
-| **Plan-and-Execute** | ทำงานหลายขั้นตอนตามแผน | backend |
-| **Reflection** | ต้องการ output คุณภาพ, ตรวจซ้ำ | designer, scribe |
-| **Chain of Thought** | วิเคราะห์เชิงลึก, ทำความเข้าใจ | steward |
-| **Tool-Use** | ใช้ tools เยอะ ต้อง orchestrate | steward |
+### รายละเอียดที่ตัดสินใจแล้ว
+
+**Backend — Plan-and-Execute + Decision Tree:**
+```
+1. Analyze Requirements
+2. Choose Architecture ตาม scale (Layered / Hexagonal / Clean+DDD)
+3. Plan (API → DB → Service → Test)
+4. Execute ทีละขั้นตาม SoC
+5. Self-Review + Deliver
+```
+[ดู full pattern ได้ที่ `agents/backend.md`]
 
 ---
 
