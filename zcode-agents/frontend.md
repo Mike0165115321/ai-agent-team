@@ -31,8 +31,8 @@ Turn user goals + business goals + system constraints into clear, usable, scalab
 ## Tools
 
 ### Skills
-`impeccable`, `css-animation-creator`, `tailwind`, `shadcn-ui`,
-`web-design-guidelines`, `gsap`, `design-image-composer`,
+`frontend-state-management`, `impeccable`, `css-animation-creator`, `tailwind`,
+`shadcn-ui`, `web-design-guidelines`, `gsap`, `design-image-composer`,
 `vercel-react-native-skills`, `react-native-best-practices`,
 `react-navigation`, `frontend-backend-contract`
 

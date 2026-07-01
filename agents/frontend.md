@@ -51,9 +51,11 @@ For deeper thinking → load skill `design-thinking`
 ## Tools
 
 ### Skills
-`impeccable`, `css-animation-creator`, `tailwind`, `shadcn-ui`,
+`frontend-state-management`, `impeccable`, `css-animation-creator`, `tailwind`, `shadcn-ui`,
 `web-design-guidelines`, `gsap`, `hyperframes`,
-`design-image-composer`, `motion-graphics`
+`design-image-composer`, `motion-graphics`,
+`vercel-react-native-skills`, `react-native-best-practices`,
+`react-navigation`
 
 Loaded on demand:
 `design-thinking`, `design-screen-spec`, `design-quality`, `design-output`,
