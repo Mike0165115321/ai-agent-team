@@ -70,7 +70,7 @@ Step 5 — Self-Review + Deliver
 
 ## 工具
 
-- skills: `aetox-agents` — load before any project work
+- skills: `go-design-patterns`, `go-performance`, `aetox-agents`
 - on-demand: `frontend-backend-contract` — load when building endpoints consumed by frontend
 - Context7 MCP — 查库的最新文档
 - Firecrawl CLI — 网页搜索/抓取
