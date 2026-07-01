@@ -62,6 +62,7 @@ Step 5 — Self-Review + Deliver
 
 - skills: `backend-architecture`, `backend-api-design`, `backend-database`
 - skills: `senior-architect-agent`, `python-design-patterns`, `python-performance-optimization`, `improve-codebase-architecture`
+- on-demand: `frontend-backend-contract` — โหลดเมื่อสร้าง/modify endpoint ที่ frontend จะเรียกใช้
 - Context7 MCP — ตรวจสอบ docs library version ปัจจุบัน
 - Firecrawl MCP — web search/scrape
 - Exa MCP — semantic search

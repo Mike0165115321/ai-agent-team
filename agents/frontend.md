@@ -56,7 +56,8 @@ For deeper thinking → load skill `design-thinking`
 `design-image-composer`, `motion-graphics`
 
 Loaded on demand:
-`design-thinking`, `design-screen-spec`, `design-quality`, `design-output`
+`design-thinking`, `design-screen-spec`, `design-quality`, `design-output`,
+`frontend-backend-contract`
 
 ### Open Design skills (inบ้าน)
 `brutalist-skill`, `swiss-creative-mode-template`,

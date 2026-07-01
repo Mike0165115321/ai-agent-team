@@ -34,7 +34,7 @@ Turn user goals + business goals + system constraints into clear, usable, scalab
 `impeccable`, `css-animation-creator`, `tailwind`, `shadcn-ui`,
 `web-design-guidelines`, `gsap`, `design-image-composer`,
 `vercel-react-native-skills`, `react-native-best-practices`,
-`react-navigation`
+`react-navigation`, `frontend-backend-contract`
 
 ### MCPs
 - Image Resolver (Pexels) — royalty-free images
